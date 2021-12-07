@@ -1,3 +1,5 @@
 *.vscode
 
 *.env
+
+*workspace.code-workspace
