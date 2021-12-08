@@ -1,7 +1,68 @@
-*.vscode
+# See http://help.github.com/ignore-files/ for more about ignoring files.
 
-*.env
+# compiled output
+/dist
+/tmp
+/out-tsc
 
-*workspace.code-workspace
+# dependencies
+/node_modules
 
-*__pycache__*
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+*.swp
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+yarn-error.log
+testem.log
+/typings
+venv
+.venv
+.npmrc
+.mypy_cache
+.gcs_key.json
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# Other
+/reports
+
+# local docker env
+.env
+
+# Cx decrypted configs
+*.dec.*
+
+# ignore any installed apps
+**/.external-apps/**
+
+# python stuff
+.pytest_cache
+__pycache__
+.coverage
+*.pyc
+
+# strapi
+/apps/cms/.strapi-updater.json
+/apps/cms/extensions/documentation/documentation/1.0.0/full_documentation.json
+full_documentation.json
