@@ -1,6 +1,6 @@
 from sqlalchemy import Column, String, Integer
 
-from app.model.base import BaseModel
+from base import BaseModel
 
 
 class MenuItem(BaseModel):
