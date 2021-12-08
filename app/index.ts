@@ -1,15 +1,13 @@
-#!/usr/bin/env node
-import * as yargs from 'yargs';
+import { MenuItem } from './interfaces/menu-item';
+import figlet from 'figlet';
+import { getMenuItems } from './data/menu-item-data';
 
-let args = yargs
-  .option('input', {
-    alias: 'i',
-    demand: true,
-  })
-  .option('year', {
-    alias: 'y',
-    description: 'Year number',
-    demand: true,
-  }).argv;
+console.log(figlet.textSync('Random Recipe', { verticalLayout: 'full' }));
 
-console.log(JSON.stringify(args));
+const menuItems: MenuItem[] = getMenuItems();
+const randomItem: MenuItem = menuItems[Math.floor(Math.random() * menuItems.length)];
+
+console.log('--------------------------');
+console.log('Today you should eat');
+console.log(randomItem.title);
+console.log('This is how it looks', randomItem.imageUrl);
