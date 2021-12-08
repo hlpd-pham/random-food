@@ -1,0 +1,50 @@
+{
+  "name": "random-recipe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./lib/index.js",
+  "bin": {
+    "recipe": "./lib.index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx ts-node --project tsconfig.json app/index.ts",
+    "create": "npm run build && npm run test",
+    "build": "tsc -p .",
+    "local": "sudo npm i -g && pizza",
+    "refresh": "rm -rf ./node_modules ./package-lock.json && npm install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hlpd-pham/random-food.git"
+  },
+  "author": "Hoa Pham",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hlpd-pham/random-food/issues"
+  },
+  "homepage": "https://github.com/hlpd-pham/random-food#readme",
+  "dependencies": {
+    "chalk": "^5.0.0",
+    "clear": "^0.1.0",
+    "commander": "^8.3.0",
+    "figlet": "^1.5.2",
+    "knex": "^0.95.14",
+    "node": "^17.2.0",
+    "npx": "^10.2.2",
+    "objection": "^3.0.0",
+    "papaparse": "^5.3.1",
+    "pg": "^8.7.1",
+    "typescript-formatter": "^7.2.2"
+  },
+  "devDependencies": {
+    "@types/clear": "^0.1.2",
+    "@types/figlet": "^1.5.4",
+    "@types/node": "^16.11.12",
+    "@types/yargs": "^17.0.7",
+    "nodemon": "^2.0.15",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.2",
+    "yargs": "^17.3.0"
+  }
+}

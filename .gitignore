@@ -19,11 +19,7 @@
 *.swp
 
 # IDE - VSCode
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
+*.vscode/*
 
 # misc
 /.sass-cache
@@ -44,25 +40,8 @@ venv
 .DS_Store
 Thumbs.db
 
-# Other
-/reports
-
 # local docker env
 .env
 
-# Cx decrypted configs
-*.dec.*
-
 # ignore any installed apps
 **/.external-apps/**
-
-# python stuff
-.pytest_cache
-__pycache__
-.coverage
-*.pyc
-
-# strapi
-/apps/cms/.strapi-updater.json
-/apps/cms/extensions/documentation/documentation/1.0.0/full_documentation.json
-full_documentation.json

@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "types": ["node"],
+    "declaration": true,
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es2017",
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "lib": ["es2017", "dom"],
+    "outDir": "lib",
+    "rootDir": "app",
+    "strict": true
+  },
+  "include": ["**/*.ts"]
+}
