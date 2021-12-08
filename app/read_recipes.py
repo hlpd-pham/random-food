@@ -1,4 +1,3 @@
-import pandas as pd
 import json
 
 with open('assets/spoonacular.json') as f:

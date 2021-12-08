@@ -28,7 +28,7 @@ target_metadata = None
 
 
 def get_url():
-    return f"psql://{os.getenv('POSTGRES_USER')}:{os.getenv('POSTGRES_PASSWORD')}@localhost/{os.getenv('POSTGRES_DB')}"
+    return f"{os.getenv('DB_URL')}"
 
 
 def run_migrations_offline():
@@ -43,9 +43,8 @@ def run_migrations_offline():
     script output.
 
     """
-    url = get_url()
     context.configure(
-        url=url,
+        url=get_url(),
         target_metadata=target_metadata,
         literal_binds=True,
         dialect_opts={"paramstyle": "named"},
