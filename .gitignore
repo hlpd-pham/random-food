@@ -45,3 +45,6 @@ Thumbs.db
 
 # ignore any installed apps
 **/.external-apps/**
+
+.angular
+.angular/cache/
