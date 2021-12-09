@@ -1,0 +1,9 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../../dist/out-tsc",
+    "removeComments": true
+  },
+  "exclude": ["**/*.spec.ts", "../ui/**/*.*", "./src/__tests__/**/*.ts"],
+  "include": ["./**/*.ts"]
+}
