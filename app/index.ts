@@ -1,7 +1,10 @@
-import { MenuItem } from './interfaces/menu-item';
-import figlet from 'figlet';
 import chalk from 'chalk';
+import figlet from 'figlet';
+import clear from 'clear';
+import { MenuItem } from './interfaces/menu-item';
 import { getMenuItems } from './data/menu-item-data';
+
+clear();
 
 console.log(chalk['red'](figlet.textSync('Random Recipe', { verticalLayout: 'full' })));
 
