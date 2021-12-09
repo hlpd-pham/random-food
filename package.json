@@ -11,16 +11,21 @@
     "local": "sudo npm i -g && pizza",
     "refresh:dep": "rm -rf ./node_modules ./package-lock.json && npm install",
     "prebuild": "rimraf dist",
-    "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
+    "build:api": "nest build",
     "start:api": "nest start",
     "start:api:dev": "nest start --watch",
     "start:api:debug": "nest start --debug --watch",
     "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "test:cov": "jest --coverage",
-    "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand"
+    "test:api": "jest",
+    "test:api:watch": "jest --watch",
+    "test:api:cov": "jest --coverage",
+    "test:api:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
+    "ng": "ng",
+    "start:ui": "ng serve --watch",
+    "build:ui": "ng build",
+    "watch:ui": "ng build --watch --configuration development",
+    "test:ui": "ng test"
   },
   "repository": {
     "type": "git",
@@ -49,9 +54,19 @@
     "pg": "^8.7.1",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
-    "rxjs": "^7.2.0",
     "swagger-ui-express": "^4.2.0",
-    "typescript-formatter": "^7.2.2"
+    "typescript-formatter": "^7.2.2",
+    "@angular/animations": "~13.0.0",
+    "@angular/common": "~13.0.0",
+    "@angular/compiler": "~13.0.0",
+    "@angular/core": "~13.0.0",
+    "@angular/forms": "~13.0.0",
+    "@angular/platform-browser": "~13.0.0",
+    "@angular/platform-browser-dynamic": "~13.0.0",
+    "@angular/router": "~13.0.0",
+    "rxjs": "~7.4.0",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.11.4"
   },
   "devDependencies": {
     "@types/clear": "^0.1.2",
@@ -79,7 +94,12 @@
     "ts-jest": "^27.0.3",
     "ts-loader": "^9.2.3",
     "tsconfig-paths": "^3.10.1",
-    "typescript": "^4.3.5"
+    "@angular-devkit/build-angular": "~13.0.4",
+    "@angular/cli": "~13.0.4",
+    "@angular/compiler-cli": "~13.0.0",
+    "@types/jasmine": "~3.10.0",
+    "jasmine-core": "~3.10.0",
+    "typescript": "~4.4.3"
   },
   "jest": {
     "moduleFileExtensions": [
