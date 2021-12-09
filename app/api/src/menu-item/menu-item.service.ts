@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
 
-import { MenuItem } from '../interfaces/menu-item';
 import { MOCK_MENU_ITEM_DATA } from '../mock-data/menu-items';
+import { MenuItem } from './interfaces/menu-item';
 
 @Injectable()
 export class MenuItemService {
