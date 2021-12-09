@@ -1,8 +1,9 @@
 import chalk from 'chalk';
-import figlet from 'figlet';
 import clear from 'clear';
-import { MenuItem } from './interfaces/menu-item';
+import figlet from 'figlet';
+
 import { getMenuItems } from './data/menu-item-data';
+import { MenuItem } from './interfaces/menu-item';
 
 clear();
 

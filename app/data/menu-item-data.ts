@@ -1,5 +1,5 @@
-import * as data from '../menu-item-data.json';
 import { MenuItem } from '../interfaces/menu-item';
+import * as data from '../menu-item-data.json';
 
 export function getMenuItems(): MenuItem[] {
   const menuItems = data.menuItems;
