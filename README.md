@@ -1,3 +1,3 @@
-# Get some random food if you don't know what to eat
+# Tired of thinking what to eat? I got you
 
 Run `npm install` then `npm run start` to see ur suggestion
